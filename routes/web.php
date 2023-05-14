@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JobPositionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,9 @@ Route::get('/', function () {
 Route::get('/layout', function () {
     return view('layout.master');
 });
+
+Route::get('/dashboard', function () {
+    return view('beranda.index');
+});
+
+Route::get('/jobposition',[JobPositionController::class, 'index'])->name('jobposition');
