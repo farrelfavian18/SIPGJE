@@ -92,11 +92,12 @@
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a  style="color:White" href="https://www.gj-energi.co.id/id/home" class="nav-link"><b>Website PT.Ginting Jaya Energi</b></a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a  style="color:white" href="#" class="nav-link">Contact</a>
+                {{--<li class="nav-item d-none d-sm-inline-block">--}}
+                    <a class="brand-link">
+                    <img src="../../dist/img/logo-bg.png" alt="GINTING JAYA ENERGI Logo"
+                        class="brand-image img-circle elevation-4">
+                {{--<li class="nav-item d-none d-sm-inline-block">--}}
+                    <a  style="color:White" href="https://www.gj-energi.co.id/id/home" class="nav-link"><b>PT.Ginting Jaya Energi</b></a>
                 </li>
             </ul>
 
@@ -228,11 +229,12 @@
 
         <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #bcac3c">
 
-            <a href="../../index3.html" class="brand-link">
+          {{--  <a href="../../index3.html" class="brand-link">
                 <img src="../../dist/img/logo-bg.png" alt="GINTING JAYA ENERGI Logo"
                     class="brand-image img-circle elevation-3">
                 <span style="color:white">PT.Ginting Jaya Energi</span>
             </a>
+            --}}
 
             <div class="sidebar">
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
@@ -247,45 +249,45 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
-
+                        
                         <li class="nav-item">
                             <a href="{{ url('dashboard') }}" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
+                                <strong style="color:White">
                                     Dashboard
-                                </p>
+                                </strong>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('listposisi') }}" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
-                                <p>
+                                <strong style="color:White">
                                     List Posisi
-                                </p>
+                                </strong>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('formulirloker') }}" class="nav-link">
                                 <i class="nav-icon fas fa-edit"></i>
-                                <p>
+                                <strong style="color:White">
                                     Form Pendaftaran
-                                </p>
+                                </strong>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('listpendaftar') }}" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
-                                <p>
+                                <strong style="color:White">
                                     List Pendaftar
-                                </p>
+                                </strong>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('interview') }}" class="nav-link">
                                 <i class="nav-icon far fa-envelope"></i>
-                                <p>
+                                <strong style="color:White">
                                     Interview
-                                </p>
+                                </strong>
                             </a>
                         </li>
                     </ul>
@@ -296,12 +298,11 @@
         </aside>
 
         <div class="content-wrapper">
-
-            <section class="content-header">
+            <!--<section class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Blank Page</h1>
+                            {{--<h1>Blank Page</h1>--}}
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -312,41 +313,17 @@
                     </div>
                 </div>
             </section>
-
+        -->
             <section class="content">
-
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Title</h3>
-                        <div class="card-tools">
-                            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                                <i class="fas fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        Start creating your amazing application!
-                    </div>
-
-                    <div class="card-footer">
-                        Footer
-                    </div>
-
-                </div>
-
-            </section>
-
+                @yield('content')
+            </section> 
         </div>
 
         <footer class="main-footer">
             <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.2.0
+                <b>Version</b> 1.0
             </div>
-            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights
-            reserved.
+            <strong>© Copyright PT. GINTING JAYA ENERGI. All Rights Reserved &copy; 2023 .</strong>
         </footer>
 
         <aside class="control-sidebar control-sidebar-dark">
