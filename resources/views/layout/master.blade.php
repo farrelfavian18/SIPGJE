@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Blank Page</title>
+    <title>E-Rektrutmen -  PT. GINTING JAYA ENERGI</title>
 
     {{--<link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">--}}
@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css')}}">
 
-    <link rel="stylesheet" href="{{ asset('dist/css/adminlte.css?v=3.2.0')}}">
+    <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css?v=3.2.0')}}">
     <script nonce="0d80248f-afbf-4628-8f31-ffbbd7686f4d">
         (function (w, d) {
             ! function (dk, dl, dm, dn) {
@@ -86,17 +86,17 @@
 
     <div class="wrapper">
 
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light " style="background-color: #bcac3c">
 
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../index3.html" class="nav-link">Home</a>
+                    <a  style="color:White" href="https://www.gj-energi.co.id/id/home" class="nav-link"><b>Website PT.Ginting Jaya Energi</b></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a  style="color:white" href="#" class="nav-link">Contact</a>
                 </li>
             </ul>
 
@@ -229,19 +229,18 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #bcac3c">
 
             <a href="../../index3.html" class="brand-link">
-                <img src="../../dist/img/logo-bg.png" alt=" GINTING JAYA ENERGI Logo"
-                    class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">PT Ginting Jaya Energi Tbk.</span>
+                <img src="../../dist/img/logo-bg.png" alt="GINTING JAYA ENERGI Logo"
+                    class="brand-image img-circle elevation-3">
+                <span style="color:white">PT.Ginting Jaya Energi</span>
             </a>
 
             <div class="sidebar">
-
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
                         <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Farrel Favian</a>
+                        <a style="color:white" href="#" class="d-block"><b>Farrel Favian</b></a>
                     </div>
                 </div>
 
