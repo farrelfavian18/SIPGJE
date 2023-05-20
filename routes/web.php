@@ -22,8 +22,12 @@ Route::get('/layout', function () {
     return view('layout.master');
 });
 
-Route::get('/dashboard', function () {
+Route::get('admin/dashboard', function () {
     return view('beranda.index');
+});
+
+Route::get('admin/listposisi', function () {
+    return view('listposisi.index');
 });
 
 Route::get('/jobposition',[JobPositionController::class, 'index'])->name('jobposition');
