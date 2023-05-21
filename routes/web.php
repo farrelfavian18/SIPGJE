@@ -30,4 +30,16 @@ Route::get('admin/listposisi', function () {
     return view('listposisi.index');
 });
 
+Route::get('admin/listposisi/edit', function () {
+    return view('listposisi.edit');
+});
+
+Route::get('admin/formpendaftaran', function () {
+    return view('formulirloker.index');
+});
+
+Route::get('admin/listpelamar', function () {
+    return view('listpelamar.index');
+});
+
 Route::get('/jobposition',[JobPositionController::class, 'index'])->name('jobposition');

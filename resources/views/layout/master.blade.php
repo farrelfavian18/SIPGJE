@@ -33,7 +33,7 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="https://www.gj-energi.co.id/" class="nav-link" style="color:White">PT. Ginting Jaya Energi</a>
+                    <a href="https://www.gj-energi.co.id/" class="nav-link" style="color:White">Beranda</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link" style="color:White">Contact</a>
@@ -212,7 +212,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" >
+                            <a class="nav-link {{Request::is('admin/formpendaftaran')? 'active':''}}" href="{{url('admin/formpendaftaran')}}" >
                                 <i class="nav-icon fas fa-edit" style="color:White"></i>
                                 <p style="color:White">
                                     Form Pendaftaran
@@ -220,7 +220,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a class="nav-link {{Request::is('admin/listpelamar')? 'active':''}}" href="{{url('admin/listpelamar')}}">
                                 <i class="nav-icon fas fa-copy" style="color:White"></i>
                                 <p style="color:White">
                                     List Pendaftar
