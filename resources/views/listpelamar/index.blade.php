@@ -15,7 +15,7 @@
           <th>No</th>
           <th>Nama Lengkap</th>
           <th>Jabatan</th>
-          <th>Tempat Lahir/th>
+          <th>Tempat Lahir</th>
           <th>Tanggal Lahir</th>
           <th>Jenis Kelamin</th>
           <th>Alamat</th>
@@ -23,28 +23,23 @@
         </thead>
         <tbody>
         <tr>
-          <td>Trident</td>
-          <td>Internet
-            Explorer 4.0
-          </td>
-          <td>Win 95+</td>
-          <td> 4</td>
-          <td>X</td>
-          <td> 4</td>
-          <td>X</td>
+          <td>1</td>
+          <td>Farrel Favian</td>
+          <td>HSE Officer</td>
+          <td>Palembang</td>
+          <td>18-05-02</td>
+          <td>Laki-Laki</td>
+          <td>Jalan Sersan Wahab</td>
         </tr>
         <tr>
-          <td>Trident</td>
-          <td>Internet
-            Explorer 5.0
-          </td>
-          <td>Win 95+</td>
-          <td>5</td>
-          <td>C</td>
-          <td> 4</td>
-          <td>X</td>
+          <td>1</td>
+          <td>Kevin Sanjaya</td>
+          <td>Driller</td>
+          <td>Jakarta</td>
+          <td>20-02-03</td>
+          <td>Laki-Laki</td>
+          <td>Jalan Talang Keramat</td>
         </tr>
-
         </tfoot>
       </table>
     </div>

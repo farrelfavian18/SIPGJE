@@ -17,12 +17,12 @@
           <form>
             <div class="card-body">
               <div class="form-group">
-                <label for="exampleInputEmail1">Nama Lengkap</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <label for="exampleInputEmail1">Nama</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukan Nama Lengkap">
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1">Alamat</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukan alamat lengkap">
               </div>
               <div class="form-group">
                 <label for="exampleInputFile">Curriculum Vitae (CV)</label>
@@ -38,7 +38,7 @@
               </div>
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <label class="form-check-label" for="exampleCheck1">Demikian data yang dimasukan benar adanya dan sesuai fakta</label>
               </div>
             </div>
             <!-- /.card-body -->
