@@ -196,7 +196,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a class="nav-link {{Request::is('admin/dashboard')? 'active':''}}" href="{{url('admin/dashboard')}}">
+                            <a class="nav-link {{Request::is('/dashboard')? 'active':''}}" href="{{url('/dashboard')}}">
                                 <i class="nav-icon fas fa-tachometer-alt" style="color:White"></i>
                                 <p style="color:White">
                                     Dashboard
@@ -204,7 +204,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{Request::is('admin/listposisi')? 'active':''}}" href="{{url('admin/listposisi')}}">
+                            <a class="nav-link {{Request::is('/listposisi')? 'active':''}}" href="{{url('/listposisi')}}">
                                 <i class="nav-icon fas fa-table" style="color:White"></i>
                                 <p style="color:White">
                                     List Posisi
@@ -212,7 +212,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{Request::is('admin/formpendaftaran')? 'active':''}}" href="{{url('admin/formpendaftaran')}}" >
+                            <a class="nav-link {{Request::is('/formpendaftaran')? 'active':''}}" href="{{url('/formpendaftaran')}}" >
                                 <i class="nav-icon fas fa-edit" style="color:White"></i>
                                 <p style="color:White">
                                     Form Pendaftaran
@@ -220,7 +220,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{Request::is('admin/listpelamar')? 'active':''}}" href="{{url('admin/listpelamar')}}">
+                            <a class="nav-link {{Request::is('/listpelamar')? 'active':''}}" href="{{url('/listpelamar')}}">
                                 <i class="nav-icon fas fa-copy" style="color:White"></i>
                                 <p style="color:White">
                                     List Pendaftar

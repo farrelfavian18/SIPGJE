@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('interviews', function (Blueprint $table) {
             $table->id();
+            $table->integer('kode_interview')->unique();
+            $table->foreignId('nomor_ktp');
             $table->string('nama_lengkap');
-            $table->date('jadwal_interview');
+            $table->dateTime('jadwal_interview');
             $table->timestamps();
         });
     }

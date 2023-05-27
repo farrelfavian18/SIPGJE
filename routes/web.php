@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\JabatanPelamarController;
+use App\Http\Controllers\DataPelamarController;
+use App\Http\Controllers\ProfileController;
+use App\Models\JabatanPelamar;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\JobPositionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,28 +21,40 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/dashboard', function () {
+    return view('beranda.index');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+
+Route::get('/listpoisi',[JabatanPelamarController::class,'index'])->name('listposisi');
+
+Route::get('/listposisi', function () {
+    return view('listposisi.index');
+});
+
 Route::get('/layout', function () {
     return view('layout.master');
 });
 
-Route::get('admin/dashboard', function () {
-    return view('beranda.index');
-});
-
-Route::get('admin/listposisi', function () {
-    return view('listposisi.index');
-});
-
-Route::get('admin/listposisi/edit', function () {
+Route::get('/listposisi/edit', function () {
     return view('listposisi.edit');
 });
 
-Route::get('admin/formpendaftaran', function () {
+Route::get('/formpendaftaran', function () {
     return view('formulirloker.index');
 });
 
-Route::get('admin/listpelamar', function () {
+Route::get('/listpelamar', function () {
     return view('listpelamar.index');
 });
 
-Route::get('/jobposition',[JobPositionController::class, 'index'])->name('jobposition');
+Route::get('/listpoisi',[JabatanPelamarController::class,'index'])->name('listposisi.index');
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';

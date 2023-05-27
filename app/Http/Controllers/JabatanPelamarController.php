@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\JabatanPelamar;
+use App\Models\Interview;
 use Illuminate\Http\Request;
+use App\Models\DataPelamar;
 
 class JabatanPelamarController extends Controller
 {
@@ -12,7 +14,8 @@ class JabatanPelamarController extends Controller
      */
     public function index()
     {
-        //
+        $jabatan = JabatanPelamar::all();
+        return view ('/listposisi',compact('jabatan'));
     }
 
     /**
@@ -20,7 +23,8 @@ class JabatanPelamarController extends Controller
      */
     public function create()
     {
-        //
+        // $jabatan = JabatanPelamar::all();
+        // return view('listposisi.create',["jabatan"=>$jabatan]);
     }
 
     /**
@@ -28,7 +32,17 @@ class JabatanPelamarController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $validateData = $request->validate([
+        //     'kode_jabatan'  => 'required',
+        //     'jabatan'  => 'required',
+        //     'deskripsi'  => 'required'
+        // ]);
+
+        // $jabatan = new JabatanPelamar();
+        // $jabatan->jabatan = $validateData['jabatan'];
+
+        // $jabatan->save();
+        // return redirect()->route('listposisi.index');
     }
 
     /**
@@ -36,7 +50,7 @@ class JabatanPelamarController extends Controller
      */
     public function show(JabatanPelamar $jabatanPelamar)
     {
-        //
+        // return view('listposisi.show');
     }
 
     /**
@@ -44,7 +58,7 @@ class JabatanPelamarController extends Controller
      */
     public function edit(JabatanPelamar $jabatanPelamar)
     {
-        //
+        // return view('listposisi.edit',compact('jabatan'));
     }
 
     /**
@@ -52,7 +66,10 @@ class JabatanPelamarController extends Controller
      */
     public function update(Request $request, JabatanPelamar $jabatanPelamar)
     {
-        //
+        // $rules=['jabatan'=>'required'];
+        // $validatedData = $request->validate($rules);
+        // JabatanPelamar::where('id',$jabatan->id)->update($validatedData);
+        // return redirect()->route('listposisi.index');
     }
 
     /**
@@ -60,6 +77,7 @@ class JabatanPelamarController extends Controller
      */
     public function destroy(JabatanPelamar $jabatanPelamar)
     {
-        //
+        // JabatanPelamar::destroy($jabatan -> id);
+        // return redirect()->route('listposisi.index');
     }
 }
